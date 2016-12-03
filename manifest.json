@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+  "name": "YouTube Search",
+  "version": "1.0.0",
+  "description": "A YouTube extension button for your instant video search.",
+  "author": "Juan Cruz Hernandez",
+  "icons":{"128":"img/google_youtube.png"},
+	"browser_action": {
+		"default_icon": "img/google_youtube.png",
+		"default_title": "YouTube Search",
+		"default_popup": "popup.html"
+	},
+	"permissions":[
+		"https://www.googleapis.com/youtube/v3/search",
+		"activeTabs"
+	]
+}
