@@ -2,7 +2,7 @@
 
 <head>
 	<meta charset="UTF-8" />
-	<link href="styles.css" rel="stylesheet" type="text/css">
+	<link href="style.css" rel="stylesheet" type="text/css">
 	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300' rel='stylesheet' type='text/css'>
 	<script src="jquery-3.1.1.min.js"></script>
 	<script src="app.js"></script>
@@ -12,23 +12,26 @@
 	<header>
 		<div class="row ">
 			<div>
-				<a href="https://www.youtube.com/"><img src="img/youtube.png" height=32px></a>
+				<a href="https://www.youtube.com/" target="_blank"><img  src="img/icon128.png" height=38px></a>
 			</div>
 
-			<form>
-				<div>
-					<input type="text" name="Search" placeholder="Search" id="search">
-					<input type="submit" value="" id="search_button" >
+			<form id="myForm">
+				<div >
+	 					<input type="text"  placeholder="Search" id="search_text">
+						<input type="submit" value="" id="search_button"  >
 				</div>
 			</form>
+
 		</div>
 	</header>
 
 	<div>
-		<ul id="template">
+		<ol id="template">
 
-		</ul>
+		</ol>
 	</div>
+
+
 </body>
 
 </html>
