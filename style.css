@@ -49,7 +49,7 @@ li {
 }
 
 #search_text:hover{
-  border: 1px solid #bfbfbf;
+  border: 1px solid #adadad;
 }
 
 #search_text:focus{
@@ -72,6 +72,11 @@ li {
 }
 #search_button:hover{
   background-color: #ededed;
+}
+
+#search_button:focus{
+  border: 1px solid#4d90fe;
+  box-shadow: inset 0px 1px 1px 0px #bfbfbf;
 }
 
 #search_button:active{
