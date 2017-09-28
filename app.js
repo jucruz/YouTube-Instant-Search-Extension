@@ -2,7 +2,7 @@ const ApiKey = 'AIzaSyCBrCxWdLtO3TlCFkQ-rFVhIGt0VJtfgMk';
 var searchWord ='';
 var mostPopularURL = "https://www.googleapis.com/youtube/v3/videos";
 var searchURL = "https://www.googleapis.com/youtube/v3/search";
-searchWord = prompt("Enter your search.");
+//searchWord = prompt("Enter your search.");
 var searchList = {
     part: 'snippet',
     q: searchWord,
@@ -18,12 +18,18 @@ var videoList = {
     maxResults: 20,
     key: ApiKey
 }
-
-if(searchWord == '' || searchWord == null){
-  $(document).ready(init(mostPopularURL, videoList));
-}else {
-  $(document).ready(init(searchURL,searchList));
+function searchAction() {
+    searchList.q = $('#search_text').val();
+    document.getElementById("template").innerHTML = "";
+    $(document).ready(init(searchURL,searchList));
 }
+
+$(document).ready(init(mostPopularURL, videoList));
+$(function(){
+    $('#search_text').change(searchAction);
+    $('#search_button').click(searchAction);
+});
+
 
 function init(URL, list) {
     $.get(URL, list, function(data) {
