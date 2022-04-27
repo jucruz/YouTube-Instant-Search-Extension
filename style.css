@@ -1,3 +1,124 @@
+@media (prefers-color-scheme: dark) {
+  /* Dark theme styles go here */
+
+html {
+  position: static;
+  min-width: 410px;
+  height: auto;
+}
+
+body {
+  background-color: #373737;
+  margin: 0 auto;
+  padding: 0;
+  position: relative;
+  width: auto;
+  height: auto;
+  box-sizing: border-box;
+}
+
+header {
+  background-color:#202020;
+  margin: 0;
+  width: auto;
+  height: 52px;
+}
+
+.row {
+  overflow:hidden;
+}
+
+.row div {
+  float: left;
+  min-height: 52px;
+  padding-top: 10px;
+  padding-left: 10px;
+  margin: 0 auto;
+}
+
+li {
+  height: 110px;
+}
+
+::-webkit-input-placeholder {
+  color: #888888;
+}
+
+#search_text {
+  background-color: #121212;
+  width: 240px;
+  height: 32px;
+  border: 1px solid #313131;
+  font-size: 16px;
+  outline: none;
+}
+
+#search_text:hover{
+  border: 1px solid #313131;
+}
+
+#search_text:focus{
+  border: 1px solid #4d90fe;
+  box-shadow: inset 0px 1px 1px 0px #313131;
+  color: #888888;
+}
+
+#search_button {
+  background-image: url(img/searchIconDarkmode.png);
+  background-repeat: no-repeat;
+  background-color: #313131;
+  background-position: 10px 5px;
+  margin: 0 auto;
+  width: 45px;
+  height: 32px;
+  border: 1px solid #313131;
+  border-left: 0;
+  float: right;
+  outline: none;
+}
+#search_button:hover{
+  background-color: #313131;
+}
+
+ol {
+  list-style-type: none;
+  background-color: #202020;
+  padding: 10px;
+}
+
+#nav {
+  position: absolute;
+  padding: 10px;
+  left: 0px;
+}
+a {
+  text-decoration:none;
+  color:#ffffff;
+}
+
+#user a{
+  color: #aaaaaa;
+}
+
+#title {
+  margin-left: 120px;
+  font-size: 14px;
+  min-height: 20px;
+}
+
+#user{
+  margin-left: 120px;
+  padding: 0px;
+  padding-left: 10px;
+  color: #aaaaaa;
+  min-height: 16px;
+}
+
+}
+
+@media (prefers-color-scheme: light) {
+  /* Light theme styles go here */
+
 html {
   position: static;
   min-width: 410px;
@@ -32,6 +153,7 @@ header {
   padding-left: 10px;
   margin: 0 auto;
 }
+
 li {
   height: 110px;
 }
@@ -41,7 +163,7 @@ li {
 }
 
 #search_text {
-  width: 280px;
+  width: 240px;
   height: 32px;
   border: 1px solid #cccccc;
   font-size: 16px;
@@ -75,7 +197,7 @@ li {
 }
 
 #search_button:focus{
-  border: 1px solid#4d90fe;
+  border: 1px solid #4d90fe;
   box-shadow: inset 0px 1px 1px 0px #bfbfbf;
 }
 
@@ -85,7 +207,6 @@ li {
 
 ol {
   list-style-type: none;
-  background-color: #ffffff;
   padding: 10px;
 }
 
@@ -98,11 +219,13 @@ a {
   text-decoration:none;
   color:#000000;
 }
+
 a:hover{
   color:#03c;
 }
+
 #user a{
-  color: #666;
+  color: #666677;
 }
 
 #title {
@@ -117,4 +240,6 @@ a:hover{
   padding-left: 10px;
   color: #667;
   min-height: 16px;
+}
+
 }
